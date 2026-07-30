@@ -22,10 +22,13 @@ h3 {
 }
 
 .home-score p, .guest-score p {
+    display: flex;
     background-color: #080001;
     width: 155px;
     height: 120px;
     font-family: "CursedTimer", sans-serif;
     color: #F94F6D;
     font-size: 90px;
+    align-items: center;
+    justify-content: center;
 }
