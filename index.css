@@ -1,6 +1,12 @@
+@font-face {
+    font-family: "CursedTimer";
+    src: url("./cursed-timer-ulil-font/CursedTimerUlil-Aznm.ttf") format("truetype");
+}
+
 body {
     margin: 0;
     background-color: #1B244A;
+    
 }
 
 .container {
@@ -15,8 +21,11 @@ h3 {
     font-size: 40px;
 }
 
-.home-score, .guest-score {
+.home-score p, .guest-score p {
     background-color: #080001;
     width: 155px;
     height: 120px;
+    font-family: "CursedTimer", sans-serif;
+    color: #F94F6D;
+    font-size: 90px;
 }
