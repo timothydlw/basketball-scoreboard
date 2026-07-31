@@ -25,7 +25,7 @@ h3 {
     display: flex;
     background-color: #080001;
     width: 155px;
-    height: 120px;
+    max-height: 120px;
     font-family: "CursedTimer", sans-serif;
     color: #F94F6D;
     font-size: 90px;
@@ -33,6 +33,8 @@ h3 {
     justify-content: center;
     margin-top: 0;
     margin-bottom: 26px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .home-side, .guest-side {
@@ -66,4 +68,10 @@ button {
 
 .guest-side {
     margin-left: 0;
+}
+
+#home-score-number, #guest-score-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
