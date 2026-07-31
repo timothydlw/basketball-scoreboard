@@ -6,7 +6,6 @@
 body {
     margin: 0;
     background-color: #1B244A;
-    
 }
 
 .container {
@@ -33,6 +32,7 @@ h3 {
     align-items: center;
     justify-content: center;
     margin-top: 0;
+    margin-bottom: 26px;
 }
 
 .home-side, .guest-side {
@@ -40,4 +40,30 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.home-buttons, .guest-buttons {
+    width: 155px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    height: 45px;
+    width: 45px;
+    color: #9AABD8;
+    border: 2px solid #9AABD8;
+    background-color: #1B244A;
+    font-family: "CursedTimer", sans-serif;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.home-side {
+    margin-right: 100px;
+}
+
+.guest-side {
+    margin-left: 0;
 }
