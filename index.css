@@ -75,3 +75,7 @@ button {
     justify-content: center;
     align-items: center;
 }
+
+.new-game-button {
+    border-radius: 50%;
+}
