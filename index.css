@@ -44,14 +44,14 @@ h3 {
     align-items: center;
 }
 
-.home-buttons, .guest-buttons {
+.home-buttons, .guest-buttons, .new-game-button {
     width: 155px;
     height: 45px;
     display: flex;
     justify-content: space-between;
 }
 
-button {
+button, .new-game-button {
     height: 45px;
     width: 45px;
     color: #9AABD8;
@@ -76,6 +76,3 @@ button {
     align-items: center;
 }
 
-.new-game-button {
-    border-radius: 50%;
-}
