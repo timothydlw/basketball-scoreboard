@@ -44,14 +44,14 @@ h3 {
     align-items: center;
 }
 
-.home-buttons, .guest-buttons, .new-game-button {
+.home-buttons, .guest-buttons {
     width: 155px;
     height: 45px;
     display: flex;
     justify-content: space-between;
 }
 
-button, .new-game-button {
+button {
     height: 45px;
     width: 45px;
     color: #9AABD8;
@@ -76,3 +76,18 @@ button, .new-game-button {
     align-items: center;
 }
 
+.new-game-button {
+    height: 45px;
+    width: 90px;
+    color: #9AABD8;
+    border: 2px solid #9AABD8;
+    background-color: #1B244A;
+    font-family: "CursedTimer", sans-serif;
+    border-radius: 5px;
+    font-size: 18px;
+    
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
