@@ -36,3 +36,10 @@ function guestThree() {
     guestScoreNumber += 3
     guestScoreEl.innerText = guestScoreNumber
 }
+
+function newGame() {
+    guestScoreNumber = 0
+    homeScoreNumber = 0
+    guestScoreEl.innerText = guestScoreNumber
+    homeScoreEl.innerText = homeScoreNumber
+}
