@@ -19,7 +19,11 @@
                     <button onclick="homeThree()">+3</button>
                 </div>
             </div>
-        <button class="new-game-button" onclick="newGame()">New Game</button>
+            <div class="center-board">
+                <p id="period-number"></p>
+                <p class="period">Period</p>
+                <button class="new-game-button" onclick="newPeriod()">New Period</button>
+            </div>
             <div class="guest-side">
                 <h3>GUEST</h3>
                 <div class="guest-score">
@@ -32,6 +36,7 @@
                 </div>
             </div>
         </div>
+        <button class="new-game-button" onclick="newGame()">New Game</button>
         <script src="index.js"></script>
     </body>
 </html>

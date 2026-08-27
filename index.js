@@ -1,11 +1,14 @@
 let homeScoreNumber = 0
 let guestScoreNumber = 0
+let periodNumber = 0
 
 let homeScoreEl = document.getElementById("home-score-number")
 let guestScoreEl = document.getElementById("guest-score-number")
+let periodNumberEl = document.getElementById("period-number")
 
 homeScoreEl.innerText = homeScoreNumber
 guestScoreEl.innerText = guestScoreNumber
+periodNumberEl.innerText = periodNumber
 
 function homeOne() {
     homeScoreNumber += 1
@@ -46,8 +49,10 @@ function guestThree() {
 function newGame() {
     guestScoreNumber = 0
     homeScoreNumber = 0
+    periodNumber = 0
     guestScoreEl.innerText = guestScoreNumber
     homeScoreEl.innerText = homeScoreNumber
+    periodNumberEl.innerText = periodNumber
 }
 
 function highlight() {
@@ -60,4 +65,9 @@ function highlight() {
     } else if (homeScoreNumber < guestScoreNumber) {
         guestScoreEl.style.color = "yellow";
     }
+}
+
+function newPeriod() {
+    periodNumber += 1
+    periodNumberEl.innerText = periodNumber
 }

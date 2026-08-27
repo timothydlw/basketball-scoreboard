@@ -87,7 +87,47 @@ button {
     font-size: 18px;
     
     
-    display: flex;
+    
+    /*
     justify-content: space-between;
     margin-top: auto;
+    */
+    
+}
+
+.period {
+    
+    
+
+    color: #eeeeee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    
+}
+
+.center-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#period-number {
+    display: flex;
+    background-color: #080001;
+    width: 155px;
+    max-height: 120px;
+    font-family: "CursedTimer", sans-serif;
+    color: #F94F6D;
+    font-size: 90px;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 26px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
