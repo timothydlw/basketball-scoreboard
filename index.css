@@ -9,9 +9,10 @@ body {
 }
 
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
 }
 
 h3 {
@@ -19,6 +20,7 @@ h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 40px;
+    margin-top: 0;
     margin-bottom: 30px;
 }
 
@@ -38,7 +40,7 @@ h3 {
     padding-bottom: 15px;
 }
 
-.home-side, .guest-side {
+.home-side, .guest-side, .center-board {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,13 +65,16 @@ button {
     font-size: 18px;
 }
 
+/*
 .home-side {
     margin-right: 100px;
 }
 
+
 .guest-side {
     margin-left: 0;
 }
+*/
 
 #home-score-number, #guest-score-number {
     display: flex;
@@ -105,7 +110,7 @@ button {
     font-weight: bold;
     font-size: 40px;
     margin-bottom: 30px;
-    margin-top: 50px;
+    margin-top: 0;
     
 }
 
@@ -113,8 +118,8 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 50px;
+    /* justify-content: center; */
+    /* margin-top: 50px; */
 }
 
 #period-number {
@@ -142,13 +147,13 @@ button {
     font-family: "CursedTimer", sans-serif;
     border-radius: 5px;
     font-size: 18px;
-    display: flex;
+    
     margin-top: 50px;
     
     /*
     align-items: center;
     justify-content: space-between;
-    
+    display: flex;
     */
     
 }
