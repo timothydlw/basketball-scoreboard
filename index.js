@@ -8,9 +8,15 @@ let periodNumberEl = document.getElementById("period-number")
 let guestFouls = document.getElementById("guest-fouls")
 let homeFouls = document.getElementById("home-fouls")
 
+let time = 0
+let timerEl = document.getElementById("timer")
+let timer
+
 homeScoreEl.innerText = homeScoreNumber
 guestScoreEl.innerText = guestScoreNumber
 periodNumberEl.innerText = periodNumber
+
+timerEl.innerText = time
 
 function homeOne() {
     homeScoreNumber += 1
@@ -74,10 +80,17 @@ function newPeriod() {
     periodNumberEl.innerText = periodNumber
 }
 
-function foulHighlight() {
-    guestFouls.style.color = "";
-    homeFouls.style.color = "";
+function foulHighlight(button) {
+    button.style.background = "red";
+}
 
-    guestFouls.style.color = "red";
-    homeFouls.style.color = "red";
+function startTimer() {
+    timer = setInterval(function() {
+        time += 1
+        timerEl.innerText = time
+    }, 1000)
+}
+
+function stopTimer() {
+    clearInterval(timer)
 }

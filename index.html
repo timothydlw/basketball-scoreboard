@@ -19,9 +19,9 @@
                     <button onclick="homeThree()">+3</button>
                 </div>
                 <div class="home-fouls">
-                    <button onclick="homeOne()">1</button>
-                    <button onclick="homeTwo()">2</button>
-                    <button onclick="homeThree()">3</button>
+                    <button onclick="foulHighlight(this)">1</button>
+                    <button onclick="foulHighlight(this)">2</button>
+                    <button onclick="foulHighlight(this)">3</button>
                 </div>
             </div>
             <div class="center-board">
@@ -29,6 +29,11 @@
                 <p id="period-number"></p>
                 <button class="new-period-button" onclick="newPeriod()">New Period</button>
                 <button class="new-game-button" onclick="newGame()">New Game</button>
+                <p id="timer">0</p>
+                <div class="foul-timer-buttons">
+                    <button class="timer-button" onclick="startTimer()">Start</button>
+                    <button class="stop-button" onclick="stopTimer()">Stop</button>
+                </div>
             </div>
             <div class="guest-side">
                 <h3>GUEST</h3>
@@ -41,9 +46,9 @@
                     <button onclick="guestThree()">+3</button>
                 </div>
                 <div class="guest-fouls">
-                    <button onclick="guestOne()">1</button>
-                    <button onclick="guestTwo()">2</button>
-                    <button onclick="guestThree()">3</button>
+                    <button onclick="foulHighlight(this)">1</button>
+                    <button onclick="foulHighlight(this)">2</button>
+                    <button onclick="foulHighlight(this)">3</button>
                 </div>
             </div>
         </div>
