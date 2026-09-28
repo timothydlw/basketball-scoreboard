@@ -164,3 +164,9 @@ button {
     justify-content: center;
     margin-top: 50px;
 }
+
+.home-fouls, .guest-fouls {
+    margin-top: 10px;
+    justify-content: space-between;
+    display: flex;
+}

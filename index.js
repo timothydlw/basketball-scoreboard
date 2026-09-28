@@ -5,6 +5,8 @@ let periodNumber = 0
 let homeScoreEl = document.getElementById("home-score-number")
 let guestScoreEl = document.getElementById("guest-score-number")
 let periodNumberEl = document.getElementById("period-number")
+let guestFouls = document.getElementById("guest-fouls")
+let homeFouls = document.getElementById("home-fouls")
 
 homeScoreEl.innerText = homeScoreNumber
 guestScoreEl.innerText = guestScoreNumber
@@ -70,4 +72,12 @@ function highlight() {
 function newPeriod() {
     periodNumber += 1
     periodNumberEl.innerText = periodNumber
+}
+
+function foulHighlight() {
+    guestFouls.style.color = "";
+    homeFouls.style.color = "";
+
+    guestFouls.style.color = "red";
+    homeFouls.style.color = "red";
 }
